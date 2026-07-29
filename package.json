@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "name": "@relintio/supabase",
+  "version": "1.0.0",
+  "description": "Relintio for Supabase Edge Functions. Wraps a Deno handler and refuses a request before it runs.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Relintio",
+    "url": "https://relintio.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relintio/relintio-supabase-agent.git"
+  },
+  "homepage": "https://relintio.com/docs/supabase",
+  "bugs": {
+    "url": "https://github.com/Relintio/relintio-supabase-agent/issues"
+  },
+  "keywords": [
+    "relintio",
+    "supabase",
+    "deno",
+    "edge-functions",
+    "security",
+    "waf",
+    "bot-detection"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@relintio/edge-core": "^1.0.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --test-timeout=10000 test/handler.test.mjs"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  }
+}
