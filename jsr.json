@@ -1,0 +1,18 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@relintio/supabase",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./src/index.js",
+  "imports": {
+    "@relintio/edge-core": "npm:@relintio/edge-core@^1.0.0"
+  },
+  "publish": {
+    "include": [
+      "src/",
+      "README.md",
+      "LICENSE",
+      "jsr.json"
+    ]
+  }
+}

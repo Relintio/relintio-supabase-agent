@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Relintio for Supabase Edge Functions. Wraps a Deno handler and refuses a request before it runs.",
   "type": "module",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "author": {
     "name": "Relintio",
     "url": "https://relintio.com"

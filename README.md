@@ -9,7 +9,7 @@
   <p>
     <a href="https://jsr.io/@relintio/supabase"><img alt="JSR" src="https://img.shields.io/badge/jsr-@relintio%2Fsupabase-efd420"></a>
     <a href="https://relintio.com/docs/quickstart/supabase"><img alt="quickstart" src="https://img.shields.io/badge/docs-quickstart-efd420"></a>
-    <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-proprietary-efd420"></a>
+    <a href="./LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-efd420"></a>
   </p>
 
   <p><strong>Relintio for Supabase Edge Functions.</strong></p>
@@ -124,4 +124,6 @@ Security reports go to **support@relintio.com**, not to a public issue.
 
 ## License
 
-Proprietary. `package.json` declares `SEE LICENSE IN LICENSE`, and [`LICENSE`](./LICENSE) is the Relintio Proprietary License: all rights reserved, with permission granted to use the software solely to integrate and operate the Relintio service under a valid, active licence obtained from Relintio. It does not permit copying, redistribution, modification, reverse engineering or derivative works, it forbids removing the proprietary notices, and it disclaims all warranties. Licensing enquiries go to Relintio.
+MIT, as declared in [`jsr.json`](./jsr.json), [`package.json`](./package.json) and [`LICENSE`](./LICENSE).
+
+This wrapper is MIT and `@relintio/edge-core`, the engine it is built on, is not. That is deliberate rather than an oversight. JSR requires every package to carry a valid SPDX licence identifier and the Relintio Proprietary License has none, so a proprietary package cannot be published there at all — and `jsr:@relintio/supabase` is the specifier a Deno runtime resolves natively. What is MIT here is the adapter: the code that hands a `Request` to the engine and returns what it decides. The engine stays proprietary, on npm, where it is resolved as an `npm:` dependency.
