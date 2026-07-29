@@ -1,6 +1,14 @@
+// @ts-self-types="./index.d.ts"
 import { EdgeGuard } from '@relintio/edge-core';
 
-export const INTEGRATION_VERSION = '1.0.0';
+/**
+ * The version of this integration, as published.
+ *
+ * Reported to the control plane alongside the agent kind, so a deployment can be
+ * identified from the console without asking anyone which version they
+ * installed.
+ */
+export const INTEGRATION_VERSION = '1.0.1';
 
 /**
  * Relintio for Supabase Edge Functions.

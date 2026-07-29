@@ -35,7 +35,7 @@ Deno.serve(withRelintio(async (request) => {
 There is nothing to install. This package is published to **JSR**, and Deno resolves the `jsr:` specifier itself when the Supabase CLI bundles the function — the import above is the install step. Pin it if you want a version fixed against a deploy:
 
 ```ts
-import { withRelintio } from 'jsr:@relintio/supabase@1.0.0';
+import { withRelintio } from 'jsr:@relintio/supabase@1.0.1';
 ```
 
 `npm install @relintio/supabase` is the wrong instruction and an expensive one, because it succeeds. It leaves a `node_modules` directory the Deno bundler never reads, the function keeps importing whatever the `jsr:` specifier resolves to — or fails to import at all if you also rewrote the specifier — and the shell has already told you it worked.

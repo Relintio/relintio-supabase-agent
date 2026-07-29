@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
   "name": "@relintio/supabase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Relintio for Supabase Edge Functions. Wraps a Deno handler and refuses a request before it runs.",
   "type": "module",
   "license": "MIT",
@@ -46,6 +46,10 @@
   },
   "main": "./src/index.js",
   "exports": {
-    ".": "./src/index.js"
-  }
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "types": "./src/index.d.ts"
 }
